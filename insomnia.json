@@ -1,0 +1,160 @@
+type: collection.insomnia.rest/5.0
+name: Ignite Node.js Challenge 01
+meta:
+  id: wrk_aa929f36752b4a85900e88a14a0c2010
+  created: 1752811047809
+  modified: 1752811047809
+  description: ""
+collection:
+  - url: http://localhost:3333/tasks
+    name: List users
+    meta:
+      id: req_a789cfdc27e74554ba9ab0ed95b4a3a9
+      created: 1752811054050
+      modified: 1752811126691
+      isPrivate: false
+      description: ""
+      sortKey: -1752811054050
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks
+    name: Create task
+    meta:
+      id: req_c010ea8b0fb84a678f27846ca2b78afc
+      created: 1752811635863
+      modified: 1752862401986
+      isPrivate: false
+      description: ""
+      sortKey: -1752721798183.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        	"title": "Clean the room",
+        	"description": "Clean the whole room before my mom gets home!"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks/95349482-8647-48c9-88cf-b95f5b94bb75
+    name: Update task
+    meta:
+      id: req_a818578b0eee4d91ba3d7ae4273938c4
+      created: 1752812390892
+      modified: 1752862381227
+      isPrivate: false
+      description: ""
+      sortKey: -1752677170250.25
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+        	"title": "Finish my homework",
+        	"description": "Math homework that I need to finish"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks/29b8c967-0687-4e20-a81d-de06a73f7dc8
+    name: Delete task
+    meta:
+      id: req_9694254a145e4ba1bb765ae73c8c88ba
+      created: 1752857519373
+      modified: 1752857545288
+      isPrivate: false
+      description: ""
+      sortKey: -1752654856283.625
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tasks/95349482-8647-48c9-88cf-b95f5b94bb75/complete
+    name: Complete task
+    meta:
+      id: req_f629a9a033524bae9da765eb2f12309c
+      created: 1752858675873
+      modified: 1752862251019
+      isPrivate: false
+      description: ""
+      sortKey: -1752643699300.3125
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: ""
+    parameters:
+      - id: pair_9d9f689adb4b4b1ab465394470a10d81
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_20144d48b1b3b893a51f6841c4e69ec09e947b7e
+    created: 1752811047823
+    modified: 1752811047823
+environments:
+  name: Base Environment
+  meta:
+    id: env_20144d48b1b3b893a51f6841c4e69ec09e947b7e
+    created: 1752811047817
+    modified: 1752811047817
+    isPrivate: false
